@@ -1,0 +1,157 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 13:21:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 13:21:11] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 13:21:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:04:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:04:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:04:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:04:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:04:58] "GET /?s=вы HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:04:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:04:59] "GET /?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:04:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:08:03] "GET /?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:08:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "G:\Мой диск\pycharm\clone 12_2 hw\main\views.py", line 21, in search_page
+    posts =load_json_data("../posts.json")
+  File "G:\Мой диск\pycharm\clone 12_2 hw\main\utils.py", line 5, in load_json_data
+    with open(path, 'r', encoding="UTF-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '../posts.json'
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:08:09] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:08:14] "GET /?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:08:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:11:42] "GET /?s= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:11:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "G:\Мой диск\pycharm\clone 12_2 hw\main\views.py", line 23, in search_page
+    return render_template("post_list.html", posts=posts, s=s)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "G:\Мой диск\pycharm\clone 12_2 hw\main\templates\post_list.html", line 17, in top-level template code
+    <img src=" {{ post.pic }}" width="100%" alt="">
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\jinja2\environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 17:11:46] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:37:54] "GET /post HTTP/1.1" 200 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "G:\Мой диск\pycharm\clone 12_2 hw\main\utils.py", line 7, in load_json_data
+    return json.load(file)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "G:\Мой диск\pycharm\clone 12_2 hw\loader\views.py", line 27, in create_new_post_by_user
+    posts = utils.load_json_data(POST_PATH)
+  File "G:\Мой диск\pycharm\clone 12_2 hw\main\utils.py", line 9, in load_json_data
+    raise DataJsonError
+exceptions.DataJsonError
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:37:56] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:38:11] "GET /post HTTP/1.1" 200 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "G:\Мой диск\pycharm\clone 12_2 hw\main\utils.py", line 7, in load_json_data
+    return json.load(file)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ivan\AppData\Local\Programs\Python\Python38\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "G:\Мой диск\pycharm\clone 12_2 hw\loader\views.py", line 27, in create_new_post_by_user
+    posts = utils.load_json_data(POST_PATH)
+  File "G:\Мой диск\pycharm\clone 12_2 hw\main\utils.py", line 9, in load_json_data
+    raise DataJsonError
+exceptions.DataJsonError
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:38:23] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:19] "GET /post HTTP/1.1" 200 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:26] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:29] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:36] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:36] "GET /uploads/images/Lighthouse.jpg HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
