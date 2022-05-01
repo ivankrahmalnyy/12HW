@@ -155,3 +155,15 @@ INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:36] "[36mGET /static/style.css H
 INFO:werkzeug:127.0.0.1 - - [01/May/2022 20:43:36] "GET /uploads/images/Lighthouse.jpg HTTP/1.1" 200 -
 INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
 INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:33:55] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:33:55] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:33:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:ќткрытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:33:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:33:59] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:33:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:выполн€етс€ поиск
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:34:05] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:34:06] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/May/2022 22:34:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
